@@ -7,12 +7,17 @@
 	}
 	
 	&__text-content {
-	position: absolute; /*places text on top of picture*/
-	top: 50%;
-	transform: translateY(-50%);	/*centers text vertically */
-	left: 0;			
-	width: 100%;
-	text-align: center;
+		padding-top: 88px;
+		position: absolute; /*places text on top of picture*/
+		top: 50%;
+		transform: translateY(-50%);	/*centers text vertically */
+		left: 0;			
+		width: 100%;
+		text-align: center;
+
+		@mixin atMedium {
+			padding-top: 60px;
+		}
 	}
 
 	&__title {
